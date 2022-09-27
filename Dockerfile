@@ -1,4 +1,3 @@
-FROM openjdk
-COPY target/*.jar /
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/hello-world 0.0.1-SNAPSHOT.jar"]
+FROM Amazon Linux
+COPY Version-2.1/ /Version-2.1/
+RUN ls -la /Version-2.1/*
